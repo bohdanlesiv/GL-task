@@ -379,10 +379,10 @@
             <id>8590d7e5-cbb2-3c51-0000-000000000000</id>
             <parentGroupId>fbf19277-a413-3136-0000-000000000000</parentGroupId>
             <position>
-                <x>1264.0</x>
-                <y>184.0</y>
+                <x>1256.0</x>
+                <y>248.0</y>
             </position>
-            <height>144.0</height>
+            <height>40.0</height>
             <label>on that step , I have configured scheduler ( 1 min interval) </label>
             <style>
                 <entry>
@@ -390,7 +390,7 @@
                     <value>12px</value>
                 </entry>
             </style>
-            <width>408.0</width>
+            <width>336.0</width>
         </labels>
         <processors>
             <id>124c2a15-df36-3730-0000-000000000000</id>
@@ -482,8 +482,8 @@
             <id>16aba4db-9c51-376d-0000-000000000000</id>
             <parentGroupId>fbf19277-a413-3136-0000-000000000000</parentGroupId>
             <position>
-                <x>888.0</x>
-                <y>0.0</y>
+                <x>896.0</x>
+                <y>8.0</y>
             </position>
             <bundle>
                 <artifact>nifi-update-attribute-nar</artifact>
@@ -546,7 +546,7 @@
                     </entry>
                     <entry>
                         <key>filename</key>
-                        <value>${now():format("yyyy-MM-dd-HH-mm")}</value>
+                        <value>KEY_FILE_NAME</value>
                     </entry>
                 </properties>
                 <runDurationMillis>0</runDurationMillis>
@@ -768,7 +768,7 @@
             <parentGroupId>fbf19277-a413-3136-0000-000000000000</parentGroupId>
             <position>
                 <x>896.0</x>
-                <y>208.0</y>
+                <y>216.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -1055,8 +1055,8 @@
             <id>973f8ff8-2ebb-3e21-0000-000000000000</id>
             <parentGroupId>fbf19277-a413-3136-0000-000000000000</parentGroupId>
             <position>
-                <x>944.0</x>
-                <y>600.0</y>
+                <x>896.0</x>
+                <y>632.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -1169,5 +1169,5 @@
             <type>org.apache.nifi.processors.standard.PutFile</type>
         </processors>
     </snippet>
-    <timestamp>11/18/2020 21:46:02 UTC</timestamp>
+    <timestamp>11/19/2020 06:37:36 UTC</timestamp>
 </template>
