@@ -2,7 +2,7 @@
 
 bin/kafka-topics.sh --version
 
-# add new line in file server.properties
+### add new line in file server.properties
 ```
 listeners=PLAINTEXT://localhost:9092
 ```
@@ -12,18 +12,18 @@ listeners=PLAINTEXT://localhost:9092
 
 
 
-#go to kafka catalog
+### go to kafka catalog
 
 ```
 cd /usr/lib/kafka
 ```
 
-# start kafka server
+### start kafka server
 ```
 sudo bin/kafka-server-start.sh config/server.properties
 ```
 
-# create topic 
+### create topic 
 ```
 bin/kafka-topics.sh --create     --zookeeper localhost:2181 \
      --replication-factor 1 \
@@ -31,13 +31,13 @@ bin/kafka-topics.sh --create     --zookeeper localhost:2181 \
      --topic topicblbtcusdt
 
 ```
-#Push test messages to the topic via sh script 
+### Push test messages to the topic via sh script 
 
 ```
 bin/kafka-console-producer.sh --broker-list localhost:9092 --topic topicblbtcusdt
 ```
 
-#check kafka version
+### check kafka version
 
 ```
 bin/kafka-topics.sh --version
@@ -51,7 +51,7 @@ bin/kafka-topics.sh --version
 homework2/nifi_template_bogdan_lesiv_kafka.xml
 
 ```
-[a link to nifi template] (https://github.com/bohdanlesiv/GL-task/blob/master/homework2/nifi_template_bogdan_lesiv_kafka.xml)
+[a link to nifi template](https://github.com/bohdanlesiv/GL-task/blob/master/homework2/nifi_template_bogdan_lesiv_kafka.xml)
 
 
 ## Kafka consumer 
@@ -67,11 +67,11 @@ In oreder to run the client next steps are mandatory
 homework2/requirements.txt
 
 ```
-[a link to requirements ] (https://github.com/bohdanlesiv/GL-task/blob/master/homework2/kafka_cons_bl/requirements.txt)
+[a link to requirements ](https://github.com/bohdanlesiv/GL-task/blob/master/homework2/kafka_cons_bl/requirements.txt)
 
 4. Upload the folder homework2\kafka_cons_bl\src with files main.py and processor.py
 
-[a link to code] (https://github.com/bohdanlesiv/GL-task/tree/master/homework2/kafka_cons_bl/src)
+[a link to code](https://github.com/bohdanlesiv/GL-task/tree/master/homework2/kafka_cons_bl/src)
 
 In additional I have implemented message validation based on message schama see processor.py
 
