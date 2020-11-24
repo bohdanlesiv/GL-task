@@ -73,6 +73,8 @@ homework2/requirements.txt
 
 [a link to code](https://github.com/bohdanlesiv/GL-task/tree/master/homework2/kafka_cons_bl/src)
 
+5. Execute  main.py without parameters
+
 In additional I have implemented message validation based on message schama see processor.py
 
 
