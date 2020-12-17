@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 """mapper.py"""
 
+# GLC| There is no need for having another MR job as you can include the logic into the agg MR job
+
 import sys
 
 for line in sys.stdin:
@@ -19,4 +21,4 @@ for line in sys.stdin:
        iata_code2 = line[0]
        iata_name = line[1]
 
-    print '%s,%s,%s,%s' % (iata_code,iata_name,iata_code2,avg)
+    print '%s,%s,%s,%s' % (iata_code,iata_name,iata_code2,avg) # GLC| f'' is cool alternative
