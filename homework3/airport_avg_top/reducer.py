@@ -10,6 +10,8 @@ for line in sys.stdin:
     line = line.strip()
     airline_code, depature_delay = line.split(',')
 
+    # GLC| 1) The process may run out of memory so its better to gather sum + count here
+    # GLC| 2) You don't really need to keep in memory all the airlines stat records but top N only
     if airline_code in airport_delay:
         airport_delay[airline_code].append(int(depature_delay))
     else:
@@ -17,7 +19,7 @@ for line in sys.stdin:
         airport_delay[airline_code].append(int(depature_delay))
 
 #Reducer
-for airline_code in airport_delay.keys():
+for airline_code in airport_delay.keys(): # GLC| for k, v in airport_delay.items():
     depature_delay_avg = sum(airport_delay[airline_code])*1.0 / len(airport_delay[airline_code])
     airport_delay_avg[airline_code] = []
     airport_delay_avg[airline_code].append(depature_delay_avg)
@@ -27,7 +29,7 @@ top_5 = nlargest(5 ,airport_delay_avg, key=airport_delay_avg.get)
 
 
 for airline_code in top_5:
-    print '%s,%s' % (airline_code, str(airport_delay_avg[airline_code][0]))
+    print '%s,%s' % (airline_code, str(airport_delay_avg[airline_code][0])) # GLC| f'' is cool alternative
 
 
 
